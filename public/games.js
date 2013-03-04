@@ -20470,6 +20470,7 @@ aima_clojure.games.tic_tac_toe.s = cljs.core.ObjMap.fromObject(["\ufdd0'to-move"
 aima_clojure.games.tic_tac_toe.empty_count.call(null, aima_clojure.games.tic_tac_toe.s);
 cljs.core.take.call(null, 5, aima_clojure.games.tic_tac_toe.line.call(null, aima_clojure.games.tic_tac_toe.s, cljs.core.PersistentVector.fromArray([0, 1], true), cljs.core.PersistentVector.fromArray([0, 1], true)));
 aima_clojure.games.tic_tac_toe.calculate_utility.call(null, aima_clojure.games.tic_tac_toe.s, cljs.core.PersistentVector.fromArray([0, 1], true), 3);
+aima_clojure.games.tic_tac_toe.moves = aima_clojure.game.moves;
 aima_clojure.games.tic_tac_toe.tic_tac_toe = function() {
   var tic_tac_toe = null;
   var tic_tac_toe__0 = function() {
@@ -20566,7 +20567,7 @@ aima_clojure.games.tic_tac_toe.tic_tac_toe = function() {
         if(or__3824__auto____6609) {
           return or__3824__auto____6609
         }else {
-          return cljs.core.empty_QMARK_.call(null, game.aima - clojure$game$Game$moves$arity$2(game, state))
+          return cljs.core.empty_QMARK_.call(null, aima_clojure.games.tic_tac_toe.moves.call(null, game, state))
         }
       };
       aima_clojure.games.tic_tac_toe.t6574.prototype.aima_clojure$game$Game$to_move$arity$2 = function(game, state) {
