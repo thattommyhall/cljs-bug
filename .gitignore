@@ -1,0 +1,12 @@
+\pom.xml
+*jar
+/lib/
+/classes/
+/targets/
+.lein-deps-sum
+/target
+/checkouts
+*.class
+.lein-failures
+.lein-plugins
+crossover-cljs
